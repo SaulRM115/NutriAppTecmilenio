@@ -17,7 +17,7 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/linearLayout"
+                android:id="@+id/metodo_get"
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:background="#7BA2BC"
@@ -31,7 +31,7 @@
                 app:layout_constraintVertical_bias="0.001">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/metodo"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -44,14 +44,14 @@
 
 
             <LinearLayout
-                android:id="@+id/linearLayout2"
+                android:id="@+id/instrucciones_container"
                 android:layout_width="257dp"
                 android:layout_height="52dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/metodo_get"
                 app:layout_constraintVertical_bias="0.041">
 
                 <!--Boton Datos-->
@@ -82,7 +82,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/instrucciones_container"
                 app:layout_constraintVertical_bias="0.204">
 
                 <!--- Contenedor de ingreso de datos (CDSS)-->
@@ -141,7 +141,7 @@
                 <!--- Boton calcular variables-->
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/calcular_variables_get"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Calcular Variables"

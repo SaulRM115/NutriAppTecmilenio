@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NutriApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">NutriAPP</string>
+    <string name="nav_header_subtitle">Universidad Tecmilenio</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="InfoNutriApp">Info NutriApp</string>
+
+    <string name="estimacionGETTXT">Estimacion del GET</string>
+    <string name="indicesCorporalesTXT">Indices Corporales</string>
+    <string name="cuadroDietoSinteticoTXT">Cuadro Dieto Sintetico</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="AppStartTXT">Info NutriApp</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

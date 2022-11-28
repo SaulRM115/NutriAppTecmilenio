@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/estimacion_get"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/estimacionGETTXT" />
+        <item
+            android:id="@+id/indices_corp"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/indicesCorporalesTXT" />
+        <item
+            android:id="@+id/cuadro_die_sin"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/cuadroDietoSinteticoTXT" />
+
+        <item android:title="Informacion de la aplicacion">
+             <menu>
+                 <group>
+                     <item
+                         android:id="@+id/app_start"
+                         android:icon="@drawable/ic_menu_slideshow"
+                         android:title="@string/AppStartTXT" />
+                 </group>
+             </menu>
+        </item>
+    </group>
+</menu>

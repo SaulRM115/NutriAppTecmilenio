@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/app_start">
+
+    <fragment
+        android:id="@+id/app_start"
+        android:name="com.example.tecmilenio_nutriapp.ui.AppStart.AppStartFragment"
+        android:label="@string/AppStartTXT" />
+
+    <fragment
+        android:id="@+id/indices_corp"
+        android:name="com.example.tecmilenio_nutriapp.ui.IndiceCorp.IndiceCorpFragment"
+        android:label="@string/indicesCorporalesTXT"
+        tools:layout="@layout/fragment_indice_corporal" />
+
+    <fragment
+        android:id="@+id/cuadro_die_sin"
+        android:name="com.example.tecmilenio_nutriapp.ui.CuadroDS.CuadroDSFragment"
+        android:label="@string/cuadroDietoSinteticoTXT"
+        tools:layout="@layout/fragment_cuadro_dieto_sintetico" />
+    <fragment
+        android:id="@+id/estimacion_get"
+        android:name="com.example.tecmilenio_nutriapp.ui.EstimacionGET.GetFragment"
+        android:label="@string/estimacionGETTXT"
+        tools:layout="@layout/fragment_app_start" />
+</navigation>

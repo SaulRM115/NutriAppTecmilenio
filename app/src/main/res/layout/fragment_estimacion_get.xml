@@ -176,7 +176,7 @@
                 android:layout_height="217dp"
                 android:layout_marginTop="14dp"
                 android:orientation="horizontal"
-                android:visibility="invisible"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
@@ -197,8 +197,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-                app:layout_constraintVertical_bias="0.94" />
+                app:layout_constraintTop_toBottomOf="@+id/observacion_container"
+                app:layout_constraintVertical_bias="0.567" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -213,6 +213,7 @@
         android:visibility="gone"
 
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="60dp" />
+        tools:layout_editor_absoluteY="60dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

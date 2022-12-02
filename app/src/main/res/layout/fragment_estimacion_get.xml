@@ -172,11 +172,11 @@
 
             <LinearLayout
                 android:id="@+id/observacion_container"
-                android:layout_width="413dp"
-                android:layout_height="217dp"
+                android:layout_width="375dp"
+                android:layout_height="172dp"
                 android:layout_marginTop="14dp"
                 android:orientation="horizontal"
-                android:visibility="gone"
+                android:visibility="visible"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
@@ -185,8 +185,7 @@
                     android:id="@+id/observacion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <Button
@@ -199,6 +198,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/observacion_container"
                 app:layout_constraintVertical_bias="0.567" />
+
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

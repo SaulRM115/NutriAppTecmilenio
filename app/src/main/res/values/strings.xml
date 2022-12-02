@@ -5,7 +5,7 @@
     <string name="nav_header_title">NutriAPP</string>
     <string name="nav_header_subtitle">Universidad Tecmilenio</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="InfoNutriApp">Info NutriApp</string>
+    <string name="InfoNutricion">Que es la nutricion?</string>
 
     <string name="estimacionGETTXT">Estimacion del GET</string>
     <string name="indicesCorporalesTXT">Indices Corporales</string>

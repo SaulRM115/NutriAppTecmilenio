@@ -10,9 +10,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
+
 
 import com.example.tecmilenio_nutriapp.R;
 import com.example.tecmilenio_nutriapp.databinding.FragmentEstimacionGetBinding;
@@ -21,6 +22,7 @@ public class GetFragment extends Fragment {
 
 
 Button calculo;
+TextView observaciones;
 
     private FragmentEstimacionGetBinding binding;
 
@@ -29,11 +31,18 @@ Button calculo;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
+
+
         View v = inflater.inflate(R.layout.fragment_estimacion_get, container, false);
         calculo = v.findViewById(R.id.calcular_variables_get);
+
         calculo.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                View vs = inflater.inflate(R.layout.fragment_estimacion_get, container, false);
+                observaciones = vs.findViewById(R.id.observacion);
+                observaciones.setText("Hola");
+
                 Toast.makeText(getContext(), "Cosas", Toast.LENGTH_SHORT).show();
             }
 
@@ -41,7 +50,7 @@ Button calculo;
 
        return v;
 
-       
+
     }
 
     @Override

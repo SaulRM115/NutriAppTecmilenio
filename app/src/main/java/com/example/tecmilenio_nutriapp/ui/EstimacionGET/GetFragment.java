@@ -1,7 +1,14 @@
 package com.example.tecmilenio_nutriapp.ui.EstimacionGET;
 
 
+
+
+
+import android.content.Context;
+import android.hardware.SensorManager;
 import android.os.Bundle;
+
+import android.os.Vibrator;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -22,7 +29,7 @@ public class GetFragment extends Fragment {
 
 
 Button calculo;
-TextView observaciones;
+
 
     private FragmentEstimacionGetBinding binding;
 
@@ -36,14 +43,12 @@ TextView observaciones;
         View v = inflater.inflate(R.layout.fragment_estimacion_get, container, false);
         calculo = v.findViewById(R.id.calcular_variables_get);
 
+
         calculo.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                View vs = inflater.inflate(R.layout.fragment_estimacion_get, container, false);
-                observaciones = vs.findViewById(R.id.observacion);
-                observaciones.setText("Hola");
-
-                Toast.makeText(getContext(), "Cosas", Toast.LENGTH_SHORT).show();
+                Vibrator vibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
+                vibrator.vibrate(1000);
             }
 
         });

@@ -43,6 +43,8 @@ Button calculo;
         View v = inflater.inflate(R.layout.fragment_estimacion_get, container, false);
         calculo = v.findViewById(R.id.calcular_variables_get);
 
+        // Caracteristica de vibrar
+        // Su detonador es la variable que contiene el boton [Calcular variables]
 
         calculo.setOnClickListener(new OnClickListener() {
             @Override

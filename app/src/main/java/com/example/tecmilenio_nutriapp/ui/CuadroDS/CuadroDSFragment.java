@@ -12,19 +12,19 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.example.tecmilenio_nutriapp.R;
-import com.example.tecmilenio_nutriapp.databinding.FragmentCuadroDietoSinteticoBinding;
+//import com.example.tecmilenio_nutriapp.databinding.FragmentCuadroDietoSinteticoBinding;
 
 public class CuadroDSFragment extends Fragment {
 
     Button calculo;
 
-    private FragmentCuadroDietoSinteticoBinding binding;
+   // private FragmentCuadroDietoSinteticoBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_estimacion_get, container, false);
-        calculo = v.findViewById(R.id.calcular_variables_ic);
+        View v = inflater.inflate(R.layout.fragment_cuadro_dieto_sintetico, container, false);
+        calculo = v.findViewById(R.id.calcular_variables_idc);
 
         // Caracteristica de vibrar
         // Su detonador es la variable que contiene el boton [Calcular variables]
@@ -46,7 +46,6 @@ public class CuadroDSFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+     //   binding = null;
     }
 }
-////

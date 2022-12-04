@@ -37,7 +37,7 @@
                     android:layout_width="317dp"
                     android:layout_height="303dp"
                     android:layout_marginTop="40dp"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam turpis et lobortis convallis. Nullam vel dolor eget mauris ornare laoreet sit amet ut ligula. In imperdiet ultricies posuere. Vivamus interdum auctor lectus vel suscipit. Aliquam et rhoncus metus. Morbi vel ligula enim. Curabitur tincidunt urna sed velit placerat, sed malesuada mi facilisis. Nam nisl velit, interdum eu eros quis, lobortis consectetur sapien. Cras faucibus, metus eget sollicitudin volutpat, lacus eros ornare leo, et fermentum mi elit nec odio. Integer volutpat maximus bibendum. In hac habitasse platea dictumst. Cras orci erat, maximus vel accumsan in, pellentesque vitae turpis. Nam libero magna, semper et tempor a, scelerisque dictum dui. Aliquam erat volutpat."
+                    android:text="@string/Bienvenido_NutriApp"
                     android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

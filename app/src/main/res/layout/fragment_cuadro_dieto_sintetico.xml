@@ -17,10 +17,10 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/metodo_ic_container"
+                android:id="@+id/metodo_cds_container"
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
-                android:background="#7BA2BC"
+                android:background="#7AADCF"
                 android:gravity="top"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
                 app:layout_constraintVertical_bias="0.001">
 
                 <TextView
-                    android:id="@+id/metodo_ic"
+                    android:id="@+id/metodo_cds"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -52,7 +52,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/metodo_ic_container"
+                app:layout_constraintTop_toBottomOf="@+id/metodo_cds_container"
                 app:layout_constraintVertical_bias="0.041">
 
                 <TextView
@@ -79,7 +79,27 @@
                 <!--- Contenedor de ingreso de datos (CDSS)-->
 
                 <LinearLayout
-                    android:id="@+id/datos_ingresar_ic_container"
+                    android:id="@+id/Observaciones_cds_container"
+                    android:layout_width="257dp"
+                    android:layout_height="141dp"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/datos_ingresar_cds_container">
+
+                    <TextView
+                        android:id="@+id/Observaciones_cds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Observaciones"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/datos_ingresar_cds_container"
                     android:layout_width="257dp"
                     android:layout_height="167dp"
                     android:gravity="center"
@@ -120,17 +140,18 @@
 
                 </LinearLayout>
 
-                <!--- Boton calcular variables-->
-
                 <Button
-                    android:id="@+id/calcular_variables_ic"
+                    android:id="@+id/calcular_variables_idc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:text="Calcular Variables"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/datos_ingresar_ic_container" />
+                    app:layout_constraintTop_toBottomOf="@+id/Observaciones_cds_container" />
+
+                <!--- Boton calcular variables-->
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -14,4 +14,12 @@
     <string name="AppStartTXT">Info NutriApp</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Bienvenido_NutriApp">
+
+        Software de nutrición gratis para nutriólogos. Cuenta con herramientas que te permiten realizar un cuadro dietosintético,
+        calcular IMC y Kilocalorias de forma rápida y sencilla.
+
+    </string>
+
 </resources>

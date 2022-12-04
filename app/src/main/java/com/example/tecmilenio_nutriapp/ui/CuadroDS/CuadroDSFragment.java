@@ -7,11 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.example.tecmilenio_nutriapp.R;
 import com.example.tecmilenio_nutriapp.databinding.FragmentCuadroDietoSinteticoBinding;
@@ -26,7 +24,7 @@ public class CuadroDSFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_estimacion_get, container, false);
-        calculo = v.findViewById(R.id.calcular_variables_cds);
+        calculo = v.findViewById(R.id.calcular_variables_ic);
 
         // Caracteristica de vibrar
         // Su detonador es la variable que contiene el boton [Calcular variables]

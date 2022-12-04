@@ -17,7 +17,7 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/metodo_cds"
+                android:id="@+id/metodo_ic_container"
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:background="#7BA2BC"
@@ -31,7 +31,7 @@
                 app:layout_constraintVertical_bias="0.001">
 
                 <TextView
-                    android:id="@+id/metodo"
+                    android:id="@+id/metodo_ic"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -52,7 +52,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/metodo_cds"
+                app:layout_constraintTop_toBottomOf="@+id/metodo_ic_container"
                 app:layout_constraintVertical_bias="0.041">
 
                 <TextView
@@ -79,7 +79,7 @@
                 <!--- Contenedor de ingreso de datos (CDSS)-->
 
                 <LinearLayout
-                    android:id="@+id/datos_ingresar_cds_container"
+                    android:id="@+id/datos_ingresar_ic_container"
                     android:layout_width="257dp"
                     android:layout_height="167dp"
                     android:gravity="center"
@@ -123,14 +123,14 @@
                 <!--- Boton calcular variables-->
 
                 <Button
-                    android:id="@+id/calcular_variables_cds"
+                    android:id="@+id/calcular_variables_ic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Calcular Variables"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/datos_ingresar_cds_container" />
+                    app:layout_constraintTop_toBottomOf="@+id/datos_ingresar_ic_container" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

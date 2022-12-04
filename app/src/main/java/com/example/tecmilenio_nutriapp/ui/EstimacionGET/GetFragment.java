@@ -25,7 +25,7 @@ import com.example.tecmilenio_nutriapp.databinding.FragmentEstimacionGetBinding;
 public class GetFragment extends Fragment {
 
 
-Button calculo;
+Button calculo; // copiar esto tambien
 
 
     private FragmentEstimacionGetBinding binding;
@@ -38,9 +38,9 @@ Button calculo;
         //Copiar desde aqui
 
         View v = inflater.inflate(R.layout.fragment_estimacion_get, container, false);
-        calculo = v.findViewById(R.id.calcular_variables_cds);
+        calculo = v.findViewById(R.id.calcular_variables_ic);
 
-        // Caracteristica de vibrar
+        // Caracteristica de vibrar (version para fragmento)
         // Su detonador es la variable que contiene el boton [Calcular variables]
 
         calculo.setOnClickListener(new OnClickListener() {

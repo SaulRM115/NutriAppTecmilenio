@@ -1,8 +1,13 @@
 package com.example.tecmilenio_nutriapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -23,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -61,4 +68,23 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    //Acceso a una URL externa (A mi me abrio en Chrome)
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.InfoNutricion:
+                Toast.makeText(this, "Abriendo Link Externo...", Toast.LENGTH_SHORT).show();
+                Intent browse = new Intent( Intent.ACTION_VIEW , Uri.parse( "https://www.euroinnova.edu.es/blog/cual-es-el-objetivo-principal-de-la-nutricion" ) );
+
+                startActivity( browse );
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    
+
 }
+

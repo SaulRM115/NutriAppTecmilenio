@@ -13,7 +13,7 @@
         <!---Donde se mostrara que tipo de formula se usara-->
 
         <LinearLayout
-            android:id="@+id/linearLayout"
+            android:id="@+id/metodo_ic_container"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:background="#7BA2BC"
@@ -26,7 +26,7 @@
             app:layout_constraintVertical_bias="0.001">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/metodo_ic"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -38,30 +38,25 @@
         <!---Seccion de los botones-->
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
+            android:id="@+id/instrucciones_container"
             android:layout_width="257dp"
             android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/metodo_ic_container"
             app:layout_constraintVertical_bias="0.041">
 
-            <Button
+            <TextView
+                android:id="@+id/instrucciones"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5px"
                 android:layout_weight="1"
-                android:text="Datos" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Observaciones" />
+                android:text="Introducir mas decimales hace mas preciso el caluclo"
+                android:textAlignment="center" />
 
         </LinearLayout>
 
@@ -72,13 +67,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/instrucciones_container"
             app:layout_constraintVertical_bias="0.204">
 
             <!---Contenedor de secciones Input y calculo-->
 
             <LinearLayout
-                android:id="@+id/linearLayout5"
+                android:id="@+id/datos_ingresar_ic_container"
                 android:layout_width="281dp"
                 android:layout_height="188dp"
                 android:gravity="center"
@@ -88,6 +83,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
+                    android:id="@+id/peso_get_container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -112,13 +108,13 @@
                         android:ems="10"
                         android:inputType="numberDecimal"
                         android:minHeight="48dp"
-                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
-                        />
+                        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
                 </LinearLayout>
 
                 <!--EdadGET-->
 
                 <LinearLayout
+                    android:id="@+id/edad_get_container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -134,7 +130,7 @@
                         android:text="Edad" />
 
                     <EditText
-                        android:id="@+id/PorcentajeMN_input"
+                        android:id="@+id/Porcentaje_cds_input"
                         android:layout_width="128dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -145,8 +141,8 @@
                 </LinearLayout>
 
 
-
                 <LinearLayout
+                    android:id="@+id/talla_get_container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -174,16 +170,17 @@
             </LinearLayout>
 
            <!-- Calculo variables-->
+
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/calcular_variables_ic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="184dp"
                 android:text="Calcular Variables"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-                app:layout_constraintVertical_bias="0.347" />
+                app:layout_constraintStart_toStartOf="parent" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -198,6 +195,7 @@
         android:visibility="gone"
 
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="60dp" />
+        tools:layout_editor_absoluteY="60dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,7 +19,7 @@
             <!---Donde se mostrara que tipo de formula se usara (IDS)-->
 
             <LinearLayout
-                android:id="@+id/linearLayout"
+                android:id="@+id/metodo_ic_container"
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:background="#7BA2BC"
@@ -32,7 +32,7 @@
                 app:layout_constraintVertical_bias="0.001">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/metodo_ic"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -44,52 +44,40 @@
             <!---contenedor de botones de datos y observaciones/resultados (IDS)-->
 
             <LinearLayout
-                android:id="@+id/linearLayout2"
+                android:id="@+id/instrucciones_container"
                 android:layout_width="257dp"
                 android:layout_height="52dp"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/metodo_ic_container"
                 app:layout_constraintVertical_bias="0.041">
 
-                <!---Boton ingresar para mostrar valores (IDS)-->
-
-
-                <Button
+                <TextView
+                    android:id="@+id/instrucciones_ic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5px"
                     android:layout_weight="1"
-                    android:text="Datos" />
-
-                <!---Resultados/Observaciones (IDS)-->
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Observaciones" />
-
+                    android:text="Introducir mas decimales hace mas preciso el caluclo"
+                    android:textAlignment="center" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/user_nav_ic_container"
                 android:layout_width="408dp"
                 android:layout_height="504dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/instrucciones_container"
                 app:layout_constraintVertical_bias="0.204">
 
                 <!--- Contenedor de ingreso de datos (IDS)-->
 
                 <LinearLayout
-                    android:id="@+id/linearLayout5"
+                    android:id="@+id/datos_ingresar_ic_container"
                     android:layout_width="257dp"
                     android:layout_height="167dp"
                     android:gravity="center"
@@ -99,14 +87,15 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <LinearLayout
+                        android:id="@+id/Peso_ic_container"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <!--PesoIDS-->
+                        <!--Peso_ic-->
 
                         <TextView
-                            android:id="@+id/PesoIDS"
+                            android:id="@+id/Peso_ic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -116,7 +105,7 @@
                         <!--PesoIDS_input-->
 
                         <EditText
-                            android:id="@+id/pesoIDS_input"
+                            android:id="@+id/pesoic_input"
                             android:layout_width="128dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -126,21 +115,16 @@
                             tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal" />
-
-
 
                     <LinearLayout
+                        android:id="@+id/Talla_ic_container"
                         android:layout_width="match_parent"
                         android:layout_height="69dp"
                         android:orientation="horizontal">
 
                         <!--TallaIDS-->
                         <TextView
-                            android:id="@+id/tallIDS"
+                            android:id="@+id/talla_ic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -150,7 +134,7 @@
                         <!--TallaIDS_input-->
 
                         <EditText
-                            android:id="@+id/tallaIDS_input"
+                            android:id="@+id/talla_ic_input"
                             android:layout_width="128dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -163,14 +147,14 @@
 
                 <!--Boton calculo de variables-->
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/calcular_variables_ic"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Calcular Variables"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+                    app:layout_constraintTop_toBottomOf="@+id/datos_ingresar_ic_container" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

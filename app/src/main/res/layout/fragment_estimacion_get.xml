@@ -13,7 +13,7 @@
         <!---Donde se mostrara que tipo de formula se usara-->
 
         <LinearLayout
-            android:id="@+id/metodo_get"
+            android:id="@+id/metodo_cds"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:background="#7BA2BC"
@@ -41,12 +41,13 @@
             android:id="@+id/instrucciones_container"
             android:layout_width="257dp"
             android:layout_height="52dp"
+            android:layout_marginTop="8dp"
             android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/metodo_get"
+            app:layout_constraintTop_toBottomOf="@+id/metodo_cds"
             app:layout_constraintVertical_bias="0.041">
 
             <TextView
@@ -72,7 +73,7 @@
             <!---Contenedor de secciones Input y calculo-->
 
             <LinearLayout
-                android:id="@+id/linearLayout5"
+                android:id="@+id/datos_ingresar_cds_container"
                 android:layout_width="281dp"
                 android:layout_height="188dp"
                 android:gravity="center"
@@ -129,7 +130,7 @@
                         android:text="Edad" />
 
                     <EditText
-                        android:id="@+id/PorcentajeMN_input"
+                        android:id="@+id/Porcentaje_cds_input"
                         android:layout_width="128dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -170,35 +171,15 @@
 
            <!-- Calculo variables-->
 
-            <LinearLayout
-                android:id="@+id/observacion_container"
-                android:layout_width="375dp"
-                android:layout_height="172dp"
-                android:layout_marginTop="14dp"
-                android:orientation="horizontal"
-                android:visibility="visible"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
-
-                <TextView
-                    android:id="@+id/observacion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
             <Button
-                android:id="@+id/calcular_variables_get"
+                android:id="@+id/calcular_variables_cds"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="184dp"
                 android:text="Calcular Variables"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/observacion_container"
-                app:layout_constraintVertical_bias="0.567" />
-
+                app:layout_constraintStart_toStartOf="parent" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

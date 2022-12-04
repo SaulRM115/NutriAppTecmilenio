@@ -19,7 +19,7 @@
             <!---Donde se mostrara que tipo de formula se usara (IDS)-->
 
             <LinearLayout
-                android:id="@+id/metodo_get"
+                android:id="@+id/metodo_cds"
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:background="#7BA2BC"
@@ -51,7 +51,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/metodo_get"
+                app:layout_constraintTop_toBottomOf="@+id/metodo_cds"
                 app:layout_constraintVertical_bias="0.041">
 
                 <!---Boton ingresar para mostrar valores (IDS)-->
@@ -89,7 +89,7 @@
                 <!--- Contenedor de ingreso de datos (IDS)-->
 
                 <LinearLayout
-                    android:id="@+id/linearLayout5"
+                    android:id="@+id/datos_ingresar_cds_container"
                     android:layout_width="257dp"
                     android:layout_height="167dp"
                     android:gravity="center"
@@ -163,14 +163,14 @@
 
                 <!--Boton calculo de variables-->
                 <Button
-                    android:id="@+id/calcular_variables_get"
+                    android:id="@+id/calcular_variables_cds"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Calcular Variables"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+                    app:layout_constraintTop_toBottomOf="@+id/datos_ingresar_cds_container" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

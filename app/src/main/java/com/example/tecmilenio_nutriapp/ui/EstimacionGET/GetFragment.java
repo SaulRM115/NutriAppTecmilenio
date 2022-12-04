@@ -5,7 +5,6 @@ package com.example.tecmilenio_nutriapp.ui.EstimacionGET;
 
 
 import android.content.Context;
-import android.hardware.SensorManager;
 import android.os.Bundle;
 
 import android.os.Vibrator;
@@ -14,8 +13,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 import androidx.annotation.NonNull;
@@ -38,10 +35,10 @@ Button calculo;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-
+        //Copiar desde aqui
 
         View v = inflater.inflate(R.layout.fragment_estimacion_get, container, false);
-        calculo = v.findViewById(R.id.calcular_variables_get);
+        calculo = v.findViewById(R.id.calcular_variables_cds);
 
         // Caracteristica de vibrar
         // Su detonador es la variable que contiene el boton [Calcular variables]
@@ -59,7 +56,7 @@ Button calculo;
 
 
     }
-
+// Aqui
     @Override
     public void onDestroyView() {
         super.onDestroyView();

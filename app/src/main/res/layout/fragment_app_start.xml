@@ -22,26 +22,27 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/Imagen_Bienvenida"
                     android:layout_width="295dp"
                     android:layout_height="158dp"
                     android:layout_marginTop="60dp"
-                    android:contentDescription="nada"
-                    android:src="@drawable/side_nav_bar"
+                    android:src="@drawable/tecmi_resource"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/tecmi_resource"
+                     />
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="317dp"
                     android:layout_height="303dp"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="8dp"
                     android:text="@string/Bienvenido_NutriApp"
                     android:textAlignment="center"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                    app:layout_constraintTop_toBottomOf="@+id/Imagen_Bienvenida" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>

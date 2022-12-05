@@ -17,9 +17,10 @@
 
     <string name="Bienvenido_NutriApp">
 
-        Software de nutrición gratis para nutriólogos. Cuenta con herramientas que te permiten realizar un cuadro dietosintético,
+        Software para nutriólogos. Cuenta con herramientas que te permiten realizar un cuadro dietosintético,
         calcular IMC y Kilocalorias de forma rápida y sencilla.
 
     </string>
+    <string name="Tecmi">Tecmi</string>
 
 </resources>
